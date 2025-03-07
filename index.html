@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/src/index.css">
+</head>
+<body>
+<h1 style="text-align: center">C 8 марта любимая!</h1>
+
+<button style="    margin: auto;
+    width: 100%;
+    background: #12767c;
+    color: #fff;
+    font-size: 30px;" onclick="showRandomGreeting()">Сгенерировать поздравление</button>
+<p id="greeting"></p>
+
+<script>
+    const greetings = [
+        "Желаю бесконечного вдохновения и счастливых моментов!",
+        "Пусть каждый твой день будет таким же прекрасным, как сегодня!",
+        "Оставайся самой очаровательной и неповторимой!",
+        "Пусть все твои желания сбываются легко и красиво!",
+        "Спасибо за твою улыбку, она делает мир ярче!"
+    ];
+
+    function showRandomGreeting() {
+        const randomIndex = Math.floor(Math.random() * greetings.length);
+        const randomGreeting = greetings[randomIndex];
+        document.getElementById('greeting').textContent = randomGreeting;
+    }
+</script>
+<div class="roulette">
+    <div class="spinner"></div>
+    <div class="shadow"></div>
+    <div class="markers">
+        <div class="triangle">
+
+        </div>
+    </div>
+    <div class="button">
+        <span onclick="hitrozhopiy()">SPIN</span>
+    </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.3/backbone-min.js"></script>
+<script src="js/index.js"></script>
+</html>
