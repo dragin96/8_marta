@@ -234,5 +234,5 @@ var spin = 0;
 function hitrozhopiy() {
     spinner.spin(0)
     spin ++;
-    if(spin > 3) spinner.spin()
+    if(spin > 2) spinner.spin()
 }
