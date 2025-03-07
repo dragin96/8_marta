@@ -232,7 +232,8 @@ $(window).ready(function(){
 
 var spin = 0;
 function hitrozhopiy() {
-    spinner.spin(0)
-    spin ++;
-    if(spin > 2) spinner.spin()
+    // spinner.spin(0)
+    // spin ++;
+    // if(spin > 2) 
+        spinner.spin()
 }
